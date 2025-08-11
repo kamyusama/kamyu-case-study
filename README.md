@@ -11,6 +11,7 @@
 - 入力：Twitch（モックイベント）
 - 処理：Python最小アプリで簡易応答を生成
 - 出力：（任意）OBS WebSocketで字幕を一度だけ送る
+- ![Architecture](arch.png)
 
 ## Quickstart
 ```powershell
