@@ -3,16 +3,14 @@
 > ⚠️ **非商用デモのみ**。商用利用・再配布は禁止。販売版の実装は含みません。
 
 ## TL;DR
-- Twitchコメントを**模擬イベント**で受け取り → 簡易応答を生成 → （任意）OBSへ字幕を**1回だけ**送る最小デモ。
-- 目的：**実装力の証明**（構成・最小コード）。**商用版の中身は公開しない**。
+- Twitchコメントを**模擬イベント**で受け取り → 簡易応答を生成
+- （任意）OBSへ字幕を**1回だけ**送る最小デモ
+- 目的：**実装力の証明**（構成・最小コード）。**商用版の中身は公開しない**
 
-## Architecture
-```mermaid
-flowchart LR
-  A[Twitch (Mock Event)] --> B[Python Minimal App]
-  B --> C[Reply Generator (Mock)]
-  C -->|optional| D[OBS WebSocket: Caption Once]
-```
+## Architecture（簡易説明）
+- 入力：Twitch（モックイベント）
+- 処理：Python最小アプリで簡易応答を生成
+- 出力：（任意）OBS WebSocketで字幕を一度だけ送る
 
 ## Quickstart
 ```powershell
@@ -23,7 +21,16 @@ Copy-Item .env.example .env
 python src/main.py
 # 任意：ダミー送信
 python src/optional_obs_caption.py
-```
+
 
 ## License
 See [LICENSE-SAMPLE.md](LICENSE-SAMPLE.md)（デモ用途限定・商用不可）。
+
+### 貼るときのコツ
+- **ファイルの一行目は必ず `#` から**始める（見出し）
+- コード枠は **「行頭に」** 三連バッククォート ``` で開き、**最後も ``` で閉じる**（余計な文字を入れない）
+- PowerShellではなく**GitHubの編集画面**に貼る
+
+これで体裁は完成です。  
+Mermaidの図を入れたい場合は、このあと「Architecture」章を**置き換え**で足しましょう（できるまで一緒にやるよ）。
+::contentReference[oaicite:0]{index=0}
