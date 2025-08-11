@@ -13,13 +13,15 @@
 - 出力：（任意）OBS WebSocketで字幕を一度だけ送る
 
 ## Quickstart
-    # Windows
-    .\.venv\Scripts\Activate.ps1
-    pip install -r requirements.txt
-    Copy-Item .env.example .env
-    python src/main.py
-    # 任意：ダミー送信
-    python src/optional_obs_caption.py
+```powershell
+# Windows
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+Copy-Item .env.example .env
+python src/main.py
+# 任意：ダミー送信
+python src/optional_obs_caption.py
+```
 
 ## License
 See [LICENSE-SAMPLE.md](LICENSE-SAMPLE.md)（デモ用途限定・商用不可）。
