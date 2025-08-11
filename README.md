@@ -21,16 +21,3 @@ Copy-Item .env.example .env
 python src/main.py
 # 任意：ダミー送信
 python src/optional_obs_caption.py
-
-
-## License
-See [LICENSE-SAMPLE.md](LICENSE-SAMPLE.md)（デモ用途限定・商用不可）。
-
-### 貼るときのコツ
-- **ファイルの一行目は必ず `#` から**始める（見出し）
-- コード枠は **「行頭に」** 三連バッククォート ``` で開き、**最後も ``` で閉じる**（余計な文字を入れない）
-- PowerShellではなく**GitHubの編集画面**に貼る
-
-これで体裁は完成です。  
-Mermaidの図を入れたい場合は、このあと「Architecture」章を**置き換え**で足しましょう（できるまで一緒にやるよ）。
-::contentReference[oaicite:0]{index=0}
